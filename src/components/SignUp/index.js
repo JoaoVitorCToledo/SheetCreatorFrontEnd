@@ -1,33 +1,32 @@
 import React from 'react';
 
-const SignUpPage = () => (
-  <div class="nes-container with-title">
-    <h1 class="title"> Sign Up </h1>
-    <div class="nes-field">
-      <input type="text" id="name_field" class="nes-input"/>>
-    </div>
-    <button class="nes-btn">OI</button>
+class SignUpPage extends React.Component {
+  callSignUp(path) {
+    this.props.history.push(path);
+  }
 
-    <div id="inputs" class="item"><div class="nes-field">
-      <label for="name_field">Your name</label>
-      <input type="text" id="name_field" class="nes-input"/>
-    </div>
-
-    <div class="nes-field is-inline">
-      <label for="inline_field">.input.is-success</label>
-      <input type="text" id="inline_field" class="nes-input is-success" placeholder="NES.css"/>
-    </div>
-
-    <div class="nes-field is-inline">
-      <label for="warning_field">.input.is-warning</label>
-      <input type="text" id="warning_field" class="nes-input is-warning" placeholder="8bit.css"/>
-    </div>
-
-    <div class="nes-field is-inline">
-      <label for="error_field">.input.is-error</label>
-      <input type="text" id="error_field" class="nes-input is-error" placeholder="awesome.css"/>
-    </div></div>
-  </div>
-);
+  render () {
+    return  <div class="nes-container with-title login-size">
+              <h1 class="title"> Sign Up </h1>
+              <div class="item">
+                <label for="name_field">Name</label>
+                <input id="name_field" type="text" class="nes-input"/>
+                <label for="login_field">Login</label>
+                <input id="login_field" type="text" class="nes-input"/>
+                <label for="email_field">E-mail</label>
+                <input id="email_field" type="text" class="nes-input"/>
+                <label for="password_field">Password</label>
+                <input id="password_confirmation_field" type="password" class="nes-input"/>
+                <label for="password_confirmation_field">Password Confirmation</label>
+                <input id="password_field" type="password" class="nes-input"/>
+              </div>
+              <div class="item">
+                <button class="nes-btn is-success">Sign up</button>
+                &nbsp;
+                <button class="nes-btn" onClick={() => this.callSignUp('/signin') }>Cancel</button>
+              </div>
+            </div>
+  }
+}
 
 export default SignUpPage;

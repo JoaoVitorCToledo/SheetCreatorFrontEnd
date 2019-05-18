@@ -12,7 +12,7 @@ class SignInPage extends React.Component {
                   <label for="login_field">Login</label>
                   <input id="login_field" type="text" class="nes-input"/>
                   <label for="password_field">Password</label>
-                  <input id="password_field" type="text" class="nes-input"/>
+                  <input id="password_field" type="password" class="nes-input"/>
                 </div>
                 <div class="item">
                   <button class="nes-btn">Sign in</button>
