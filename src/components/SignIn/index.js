@@ -6,21 +6,29 @@ class SignInPage extends React.Component {
   }
 
   render () {
-    return  <div class="nes-container with-title login-size">
+    return  <div class="nes-container with-title login-container">
               <h1 class="title"> Sign In </h1>
-                <div class="item">
+              <div class="login-template login-buttons-row-gap">
+                <div class="login-area">
                   <label for="login_field">Login</label>
                   <input id="login_field" type="text" class="nes-input"/>
+                </div>
+
+                <div class="password-area">
                   <label for="password_field">Password</label>
                   <input id="password_field" type="password" class="nes-input"/>
                 </div>
-                <div class="item">
+
+                <div class="signin-area">
                   <button class="nes-btn">Sign in</button>
-                  &nbsp;
+                </div>
+                <div class="signup-area">
                   <button class="nes-btn is-primary" onClick={() => this.callSignUp('/signup') }>Sign up</button>
-                  &nbsp;
+                </div>
+                <div class="forgotpassword-area">
                   <button class="nes-btn is-warning">Forgot your password ?</button>
                 </div>
+              </div>
             </div>
   }
 }
