@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignUpPage = () => (
   <div class="nes-container with-title">
-    <h1 class="title"> Sign In </h1>
+    <h1 class="title"> Sign Up </h1>
     <div class="nes-field">
       <input type="text" id="name_field" class="nes-input"/>>
     </div>
