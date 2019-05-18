@@ -6,9 +6,9 @@ class SignInPage extends React.Component {
   }
 
   render () {
-    return  <div class="nes-container with-title login-container">
+    return  <div class="nes-container with-title signin-container">
               <h1 class="title"> Sign In </h1>
-              <div class="login-template login-buttons-row-gap">
+              <div class="signin-template buttons-row-gap">
                 <div class="login-area">
                   <label for="login_field">Login</label>
                   <input id="login_field" type="text" class="nes-input"/>

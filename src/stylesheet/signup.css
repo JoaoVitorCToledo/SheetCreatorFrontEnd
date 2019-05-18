@@ -1,0 +1,55 @@
+.signup-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.name-area {
+	grid-area: name;
+}
+
+.login-area {
+	grid-area: login;
+}
+
+.email-area {
+	grid-area: email;
+}
+
+.password-area {
+	grid-area: password;
+}
+
+.confirmation-area {
+	grid-area: confirmation;
+}
+
+.signup-area {
+	grid-area: signup;
+}
+
+.cancel-area {
+	grid-area: cancel;
+}
+
+.signup-template {
+  display: grid;
+  grid-template-areas:
+  "name name name name"
+  "login login login login"
+  "email email email email"
+  "password password password password"
+  "confirmation confirmation confirmation confirmation"
+  "signup signup signup cancel";
+}
+
+@media screen and (min-width: 34em) {
+  .signup-template {
+    display: grid;
+    grid-template-areas:
+    "name name login login"
+    "email email email email"
+    "password password password password"
+    "confirmation confirmation confirmation confirmation"
+    "signup cancel . .";
+  }
+}

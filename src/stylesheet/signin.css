@@ -1,0 +1,41 @@
+.login-area {
+	grid-area: login;
+}
+
+.password-area {
+	grid-area: password;
+}
+
+.forgotpassword-area {
+	grid-area: forgotpassword;
+}
+.signin-area {
+	grid-area: signin;
+}
+
+.signup-area {
+	grid-area: signup;
+}
+
+.signin-template {
+  display: grid;
+  grid-template-areas:
+  "login login login login"
+  "password password password password"
+  "signin signin signup signup"
+  "forgotpassword forgotpassword forgotpassword forgotpassword";
+}
+
+@media screen and (min-width: 34em) {
+  .signin-template {
+    display: grid;
+    grid-template-areas:
+    "login login login"
+    "password password password"
+    "signin signup forgotpassword";
+  }
+}
+.signin-container {
+  max-width: 800px;
+  margin: auto;
+}

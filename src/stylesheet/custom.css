@@ -1,46 +1,6 @@
-/* .item {
-  margin-bottom: 1rem;
-} */
-.login-area {
-	grid-area: login;
-}
+@import 'signin.css';
+@import 'signup.css';
 
-.password-area {
-	grid-area: password;
-}
-
-.forgotpassword-area {
-	grid-area: forgotpassword;
-}
-.signin-area {
-	grid-area: signin;
-}
-
-.signup-area {
-	grid-area: signup;
-}
-
-.login-buttons-row-gap {
+.buttons-row-gap {
   grid-row-gap: 20px;
-}
-
-.login-template {
-  display: grid;
-  grid-template-areas:
-  "login login login"
-  "password password password"
-  "signin signup forgotpassword";
-}
-
-.login-container {
-  max-width: 800px;
-  margin: auto;
-}
-
-.grid {
-	display: grid;
-}
-
-.item {
-	margin: 5px;
 }
