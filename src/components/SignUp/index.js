@@ -54,6 +54,7 @@ class SignUpFormBase extends Component {
   render() {
     const {
       username,
+      login,
       email,
       passwordOne,
       passwordTwo,
@@ -64,7 +65,8 @@ class SignUpFormBase extends Component {
       passwordOne !== passwordTwo ||
       passwordOne === '' ||
       email === '' ||
-      username === '';
+      username === '' ||
+      login === '';
 
     return (
       <div class="nes-container with-title signup-container">
@@ -84,7 +86,15 @@ class SignUpFormBase extends Component {
           </div>
           <div class="login-area">
             <label for="login_field">Login</label>
-            <input id="login_field" placeholder="Login" type="text" class="nes-input"/>
+            <input
+              id="login_field"
+              name="login"
+              value={login}
+              onChange={this.onChange}
+              placeholder="Login"
+              type="text"
+              class="nes-input"
+            />
           </div>
           <div class="email-area">
             <label for="email_field">E-mail</label>
