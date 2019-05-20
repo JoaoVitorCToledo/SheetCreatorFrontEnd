@@ -1,5 +1,6 @@
 @import 'signin.css';
 @import 'signup.css';
+@import 'character_sheet.css';
 
 .buttons-row-gap {
   grid-row-gap: 20px;

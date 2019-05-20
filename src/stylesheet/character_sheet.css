@@ -1,0 +1,34 @@
+.character-sheet-template {
+  display: grid;
+  grid-template-columns: 10% 60% 15% 15%;
+  grid-template-areas:
+  "attributes stats descriptions descriptions"
+  "attributes stats descriptions descriptions"
+  "attributes skills equipments equipments"
+  "attributes skills equipments equipments";
+}
+
+.attribute-area {
+  grid-area: attributes;
+  background-color: greenyellow;
+}
+
+.stats-area {
+  grid-area: stats;
+  background-color: yellow;
+}
+
+.description-area {
+  grid-area: descriptions;
+  background-color: blue;
+}
+
+.skill-area {
+  grid-area: skills;
+  background-color: red;
+}
+
+.equipment-area {
+  grid-area: equipments;
+  background-color: purple;
+}
