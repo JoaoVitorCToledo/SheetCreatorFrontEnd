@@ -1,4 +1,4 @@
-For now this project intends to be just a sheet creator for characters in my own rpg model..
+For now this project intends to be just a sheet creator for characters in my own rpg model.
 
 ## Available Scripts
 
