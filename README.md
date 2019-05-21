@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For now this project intends to be just a sheet creator for rpgs characters.
 
 ## Available Scripts
 
